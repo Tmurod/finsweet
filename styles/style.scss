@@ -1,0 +1,57 @@
+
+@import "_shared.scss";
+@import "_mixins.scss";
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+
+    nav {
+        display: flex;
+
+        ul {
+            display: flex;
+        }
+    }
+}
+
+// section-intro
+
+.section-intro {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media only screen and ( max-width : 415px ) {
+    .container {
+        width: 415px;
+    }
+
+    .section-header {
+        justify-content: space-around;
+        width: 100%;
+
+        li {
+            display: none;
+        }
+    }
+
+    .intro {
+        
+        text-align: center;
+
+
+        h2 {
+            width: 215px;
+        }
+
+        P {
+            width: 220px;
+        }
+
+        img {
+            display: none;
+        }
+    }
+}

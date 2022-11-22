@@ -1,0 +1,49 @@
+
+@import "_mixins.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.container {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+header {
+    background: #1C1E53;
+
+    img {
+        cursor: pointer;
+    }
+
+    .section-header {
+        padding-top: 32px;
+        padding-bottom: 30px;
+
+        ul {
+            display: flex;
+            gap: 32px;
+            padding-right: 48px;
+    
+            a {
+                @include header-links
+            }
+        }
+    }      
+}
+
+// section-intro
+
+.intro {
+    background: #1C1E53;
+    padding-top: 126px;
+}
+
+
+
