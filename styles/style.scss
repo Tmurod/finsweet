@@ -8,6 +8,8 @@
 
     nav {
         display: flex;
+       align-items: center;
+        
 
         ul {
             display: flex;
@@ -15,7 +17,7 @@
     }
 }
 
-// section-intro
+// // section-intro
 
 .section-intro {
     display: flex;
@@ -23,35 +25,35 @@
 }
 
 
-@media only screen and ( max-width : 415px ) {
-    .container {
-        width: 415px;
-    }
+// @media only screen and ( max-width : 415px ) {
+//     .container {
+//         width: 415px;
+//     }
 
-    .section-header {
-        justify-content: space-around;
-        width: 100%;
+//     .section-header {
+//         justify-content: space-around;
+//         width: 100%;
 
-        li {
-            display: none;
-        }
-    }
+//         li {
+//             display: none;
+//         }
+//     }
 
-    .intro {
+//     .intro {
         
-        text-align: center;
+//         text-align: center;
 
 
-        h2 {
-            width: 215px;
-        }
+//         h2 {
+//             width: 215px;
+//         }
 
-        P {
-            width: 220px;
-        }
+//         P {
+//             width: 220px;
+//         }
 
-        img {
-            display: none;
-        }
-    }
-}
+//         img {
+//             display: none;
+//         }
+//     }
+// }

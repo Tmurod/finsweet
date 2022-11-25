@@ -3,4 +3,58 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 28px;
+    color: #BBBBCB;
+}
+
+@mixin button-dark {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+  padding: 16px 48px;
+  background: #1C1E53;
+  border-color: #FFFFFF;
+  border-radius: 41px;
+  cursor: pointer;
+}
+
+@mixin button-warning {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+  padding: 16px 48px;
+  background: #FCD980;
+  border-radius: 41px;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+@mixin intro-h2 {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 74px;
+  color: #FFFFFF;
+  padding-bottom: 24px;
+  width: 582px;
+}
+
+@mixin intro-p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+  opacity: 0.7;
+  padding-bottom: 48px;
+  width: 562px;
+}
+
+@mixin intro-arrow {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-left: 40px;
+  
 }
