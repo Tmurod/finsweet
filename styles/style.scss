@@ -2,13 +2,28 @@
 @import "_shared.scss";
 @import "_mixins.scss";
 
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Light.ttf');
+}
+
 .section-header {
     display: flex;
     justify-content: space-between;
+    
+
+
+    .burger-menu {
+        display: none;
+    }
 
     nav {
         display: flex;
-       align-items: center;
+        align-items: center;
+       @include sm {
+        display: none;
+       }
         
 
         ul {
@@ -17,11 +32,30 @@
     }
 }
 
-// // section-intro
+// // // section-intro
+
 
 .section-intro {
     display: flex;
     justify-content: space-between;
+    
+}
+
+// section-cards
+
+.section-cards {
+    display: flex;
+
+    .cards-text {
+        flex: 1;
+    }
+
+    .cards-info {
+        display: flex;
+        flex: 1;
+    }
+
+     
 }
 
 

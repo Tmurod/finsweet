@@ -4,46 +4,218 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  color: white;
+  font-family: "Poppins";
+  font-style: normal;
 }
 
 .container {
-  width: 1600px;
-  margin: 0 auto;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 1300px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (max-width: 576px) {
+  .container {
+    max-width: 415px;
+  }
 }
 
 header {
   background: #1C1E53;
-}
-header img {
-  cursor: pointer;
+  color: #FFFFFF;
 }
 header .section-header {
   padding-top: 32px;
   padding-bottom: 30px;
 }
-header .section-header ul {
-  display: flex;
+header ul {
   gap: 32px;
   padding-right: 48px;
 }
-header .section-header ul a {
+header ul a {
   font-weight: 500;
   font-size: 16px;
   line-height: 28px;
+  color: #BBBBCB;
+}
+header button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+  padding: 16px 48px;
+  background: #1C1E53;
+  border-color: #FFFFFF;
+  border-radius: 41px;
+  cursor: pointer;
 }
 
 .intro {
   background: #1C1E53;
   padding-top: 126px;
 }
+@media (max-width: 767px) {
+  .intro .section-intro {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .intro .section-intro img {
+    max-width: 50%;
+  }
+}
+.intro h2 {
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 74px;
+  color: #FFFFFF;
+  padding-bottom: 24px;
+}
+@media (max-width: 767px) {
+  .intro h2 {
+    font-size: 16px;
+  }
+}
+.intro p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+  opacity: 0.7;
+  padding-bottom: 48px;
+}
+@media (max-width: 767px) {
+  .intro p {
+    font-size: 12px;
+  }
+}
+.intro .intro-info__link {
+  padding-bottom: 128px;
+}
+.intro a {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+  margin-left: 40px;
+}
+.intro span {
+  margin-left: 16px;
+}
+.intro button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+  padding: 16px 48px;
+  background: #FCD980;
+  border-radius: 41px;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
 
+@media (max-width: 767px) {
+  .cards-container {
+    margin: 0;
+  }
+}
+
+.cards {
+  background: #F4F6FC;
+  padding-top: 128px;
+}
+@media (max-width: 767px) {
+  .cards .section-cards {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 767px) {
+  .cards .section-cards .cards-info {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.cards .section-cards .cards-text h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  color: #282938;
+  padding-bottom: 16px;
+}
+.cards .section-cards .cards-text p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #282938;
+  opacity: 0.7;
+  padding-bottom: 16px;
+}
+.cards .section-cards .cards-text a {
+  color: #2405F2;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+}
+.cards .section-cards .cards-info {
+  padding-right: 100px;
+  padding-bottom: 128px;
+}
+.cards .section-cards .cards-info .cards-info__first-row, .cards .section-cards .cards-info .cards-info__second-row {
+  padding-bottom: 48px;
+}
+.cards .section-cards .cards-info h2 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  color: #282938;
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Light.ttf");
+}
 .section-header {
   display: flex;
   justify-content: space-between;
 }
+.section-header .burger-menu {
+  display: none;
+}
 .section-header nav {
   display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .section-header nav {
+    display: none;
+  }
 }
 .section-header nav ul {
   display: flex;
@@ -54,27 +226,13 @@ header .section-header ul a {
   justify-content: space-between;
 }
 
-@media only screen and (max-width: 415px) {
-  .container {
-    width: 415px;
-  }
-  .section-header {
-    justify-content: space-around;
-    width: 100%;
-  }
-  .section-header li {
-    display: none;
-  }
-  .intro {
-    text-align: center;
-  }
-  .intro h2 {
-    width: 215px;
-  }
-  .intro P {
-    width: 220px;
-  }
-  .intro img {
-    display: none;
-  }
+.section-cards {
+  display: flex;
+}
+.section-cards .cards-text {
+  flex: 1;
+}
+.section-cards .cards-info {
+  display: flex;
+  flex: 1;
 }/*# sourceMappingURL=style.css.map */
