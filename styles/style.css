@@ -119,7 +119,6 @@ header button {
   font-weight: 500;
   font-size: 16px;
   line-height: 28px;
-  color: #FFFFFF;
   margin-left: 40px;
 }
 .intro span {
@@ -129,7 +128,7 @@ header button {
   font-weight: 500;
   font-size: 16px;
   line-height: 28px;
-  color: #FFFFFF;
+  /* color: #FFFFFF; */
   padding: 16px 48px;
   background: #FCD980;
   border-radius: 41px;
