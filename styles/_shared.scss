@@ -367,7 +367,7 @@ header {
         }
       }
 
-      .features-cards__first-row {}
+      // .features-cards__first-row {}
     }
   }
 }
@@ -484,6 +484,7 @@ header {
       font-size: 18px;
       line-height: 32px;
       color: #1B1C2B;
+      cursor: pointer;
     }
     
     a {
@@ -492,6 +493,85 @@ header {
       line-height: 32px;
       color: #FFFFFF;
       padding-left: 190px;
+    }
+  }
+}
+
+// section-blog
+
+.blog {
+  margin-top: 128px;
+
+  h2 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 64px;
+    color: #282938;
+  }
+
+  .blog-cards {
+    margin-top: 64px;
+
+    p {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 28px;
+      color: #282938;
+      opacity: 0.7;
+      padding-top: 40px;
+      padding-bottom: 16px;
+    }
+
+    h3 {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
+      color: #282938;
+      padding-bottom: 16px;
+    }
+
+    h4 {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      color: #282938;
+      opacity: 0.7;
+      padding-bottom: 32px;
+    }
+
+    a {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 28px;
+      color: #282938;
+    }
+    
+  }
+}
+
+// section-contact
+
+.contact {
+  background: #1C1E53;
+  margin-top: 128px;
+
+  .section-contact {
+    padding-top: 104px;
+
+    .contact-logo {
+
+      p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        color: #FFFFFF;
+        opacity: 0.8;
+        padding-top: 27px;
+      }
+    }
+
+    .contact-social {
+
     }
   }
 }

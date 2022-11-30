@@ -93,8 +93,8 @@
     .client-info {
       width: 80%;
       
-      .client-info__text {
-      }
+      // .client-info__text {
+      // }
       
       .client-info__link {
         display: flex;
@@ -111,9 +111,9 @@
             padding-left: 46px;
           }
           
-          span {
+          // span {
             
-          }
+          // }
           
           .left {
             background: #5239FA;
@@ -193,8 +193,33 @@
   
   .email-contact {
     flex: 1;
-    
-    
+  }
+}
+
+// section-blog
+
+.blog {
+
+  .blog-cards {
+    display: flex;
+  }
+}
+
+// .section-contact
+
+.contact {
+
+  .section-contact {
+    display: flex;
+    flex-basis: 50%;
+  
+    // .contact-logo {
+    //   flex: 1;
+    // }
+  
+    // .contact-social {
+    //   flex: 1;
+    // }
   }
 }
 
@@ -210,36 +235,3 @@
 
 
 
-
-// @media only screen and ( max-width : 415px ) {
-//     .container {
-//         width: 415px;
-//     }
-
-//     .section-header {
-//         justify-content: space-around;
-//         width: 100%;
-
-//         li {
-//             display: none;
-//         }
-//     }
-
-//     .intro {
-
-//         text-align: center;
-
-
-//         h2 {
-//             width: 215px;
-//         }
-
-//         P {
-//             width: 220px;
-//         }
-
-//         img {
-//             display: none;
-//         }
-//     }
-// }
