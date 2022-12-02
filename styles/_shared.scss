@@ -45,10 +45,6 @@ header {
   .section-header {
     padding-top: 32px;
     padding-bottom: 30px;
-
-    @include sm {
-      text-align: center;
-    }
   }
 
   ul {
@@ -71,33 +67,11 @@ header {
   background: #1C1E53;
   padding-top: 126px;
 
-  .section-intro {
-    @include sm {
-      display: flex;
-      flex-direction: column;
-      text-align: center;
-    }
-
-    img {
-      @include sm {
-        max-width: 50%;
-      }
-    }
-  }
-
   h2 {
-    @include sm {
-      font-size: 16px;
-    }
-
     @include intro-h2
   }
 
   p {
-    @include sm {
-      font-size: 12px;
-    }
-
     @include intro-p
   }
 
@@ -118,31 +92,11 @@ header {
   }
 }
 
-// section-cards
-
-// .cards-container {
-//   @include sm {
-//     margin: 0;
-//   }
-// }
-
 .cards {
-
   background: #F4F6FC;
   padding-top: 128px;
 
   .section-cards {
-    @include sm {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .cards-info {
-      @include sm {
-        display: flex;
-        flex-direction: column;
-      }
-    }
 
     .cards-text {
 
@@ -172,10 +126,7 @@ header {
     }
 
     .cards-info {
-      padding-right: 100px;
       padding-bottom: 128px;
-
-      // .cards-info__second-row {}
 
       .cards-info__first-row,
       .cards-info__second-row {
@@ -190,7 +141,6 @@ header {
         padding-top: 16px;
         padding-bottom: 8px;
       }
-
     }
   }
 }
@@ -199,7 +149,7 @@ header {
 
 .section-projects {
   margin-top: 128px;
-
+  
   .projects-subtitle {
 
     h1 {
@@ -280,15 +230,20 @@ header {
         line-height: 28px;
         color: #FCD980;
       }
+
+      .projects-image__small-2 img {
+        
+        @include sm {
+          width: 95%;
+        }
+      }
+      
     }
-
-
+    
     h2 {
       padding-top: 100px;
     }
   }
-
-
 }
 
 //section-features
@@ -328,15 +283,24 @@ header {
       display: flex;
       flex-direction: column;
       margin-top: 47px;
-
+      
       .features-cards__first-row,
       .features-cards__second-row {
         display: flex;
+        
+        @include sm {
+          display: flex;
+          flex-direction: column;
+        }
 
         .cards-box {
           background: #FFFFFF;
           margin-right: 32px;
           margin-bottom: 24px;
+          
+          @include sm {
+            width: 100%;
+          }
 
           img {
             padding-top: 58px;
@@ -363,11 +327,8 @@ header {
             padding-bottom: 48px;
             padding-right: 32px;
           }
-
         }
       }
-
-      // .features-cards__first-row {}
     }
   }
 }
@@ -442,6 +403,10 @@ header {
   .email-contact {
     background: #1C1E53;
     
+    @include sm {
+      text-align: center;
+    }
+    
     h2 {
       font-weight: 500;
       font-size: 32px;
@@ -472,6 +437,13 @@ header {
       border: 1.5px solid rgba(255, 255, 255, 0.05);
       border-radius: 8px;
       margin-bottom: 16px;
+      
+      @include sm {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        padding-right: 20px;
+      }
     }
     
     button {
@@ -485,6 +457,11 @@ header {
       line-height: 32px;
       color: #1B1C2B;
       cursor: pointer;
+      
+      @include sm {
+        width: 50%;
+        margin: 0;        
+      }
     }
     
     a {
@@ -511,6 +488,12 @@ header {
 
   .blog-cards {
     margin-top: 64px;
+    
+    img {
+      @include sm {
+      width: 95%;
+      }
+    }
 
     p {
       font-weight: 500;
@@ -545,7 +528,6 @@ header {
       line-height: 28px;
       color: #282938;
     }
-    
   }
 }
 
@@ -556,10 +538,61 @@ header {
   margin-top: 128px;
 
   .section-contact {
+    align-items: center;
     padding-top: 104px;
-
+    
     .contact-logo {
-
+      padding-top: 10px;
+      
+      .contact-logo__info {
+        background-color: #FCD980;
+        width: 80%;
+        
+        .logo-info__mail{
+          
+          h3 {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 32px;
+            color: #282938;
+            padding-top: 18px;
+            padding-left: 37px;
+          }
+          
+          a {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #282938;
+            opacity: 0.8;
+            padding-left: 37px;
+            margin-bottom: 16px;
+          }
+        }
+        
+        .logo-info__number {
+          
+          h3 {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 32px;
+            color: #282938;
+            padding-top: 17px;
+            padding-left: 29px;
+          }
+          
+          address {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #282938;
+            opacity: 0.8;
+            padding-left: 29px;
+            
+          }
+        }
+      }
+      
       p {
         font-weight: 500;
         font-size: 16px;
@@ -567,11 +600,221 @@ header {
         color: #FFFFFF;
         opacity: 0.8;
         padding-top: 27px;
+        width: 70%;
+        
       }
     }
-
+    
     .contact-social {
-
+      padding-top: 3%;
+      
+      h2 {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 64px;
+        color: #FFFFFF;
+      }
+      
+      p {
+        padding-top: 14px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #F4F6FC;
+        opacity: 0.8;
+        width: 65%;
+        padding-bottom: 29px;
+      }
+      
+      a {
+        color: #FFFFFF;
+        padding-right: 27px;
+      }
     }
+  }
+}
+
+//section-footer
+
+footer {
+  background: #FFFFFF;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  
+  .section-footer {
+    
+    .footer-link {
+      
+      h2 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        color: #282938;
+      }
+    }
+    
+    nav {
+      
+      ul {
+        gap: 32px;
+        
+      }
+      
+      a {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        color: #282938;
+      }
+    }
+  }
+}
+
+
+
+
+
+// section-about__intro
+
+.about {
+  padding-top: 128px;
+  
+  .section-about__intro {
+    
+    h4 {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 32px;
+      color: #282938;
+      padding-bottom: 8px;
+    }
+    
+    h2 {
+      font-weight: 600;
+      font-size: 54px;
+      line-height: 74px;
+      color: #282938;
+      padding-bottom: 31px;
+    }
+    
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 28px;
+      text-align: justify;
+      color: #282938;
+      opacity: 0.7;
+      width: 70%;
+    }
+  }
+}
+
+// section-about__image
+
+.image {
+  margin-top: 128px;
+  
+  .section-about__image {
+    background: #F4F5F5;
+    
+    .image-subtitle {
+      
+      p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        color: #282938;
+        padding-top: 80px;
+        padding-left: 79px;
+        padding-bottom: 4px;
+      }
+    }
+    
+    .image-title {
+      
+        h2 {
+          font-weight: 600;
+          font-size: 38px;
+          line-height: 56px;
+          color: #282938;
+          padding-left: 79px;
+          padding-bottom: 16px;
+        }
+        
+        p {
+          padding-left: 79px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 28px;
+          color: #282938;
+          opacity: 0.7;
+          padding-bottom: 80px;
+        }
+        
+        .image-title__second {
+          padding-right: 100px;
+        }
+    }
+    
+    .image-photo {
+      
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+//section-about__info
+
+.info {
+  
+  .section-about__info {
+    
+    .about-info__subtitle {
+      
+      h1 {
+        text-align: center;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 64px;
+        color: #282938;
+        padding-bottom: 48px;
+      }
+    }
+    
+    .about-info__text {
+      
+      h2 {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 36px;
+        color: #282938;
+        padding-top: 32px;
+        padding-bottom: 8px;
+      }
+      
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+        color: #282938;
+        opacity: 0.7;
+        width: 90%;
+      }
+    }
+  }
+}
+
+//section-about__work
+
+.work {
+  background: #EEF4FA;
+  margin-top: 128px;
+  
+  .section-about__work {
+    padding-top: 128px;
+    
+    
   }
 }
