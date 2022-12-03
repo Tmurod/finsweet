@@ -8,11 +8,11 @@
 }
 
 .section-header {
-  @include sm {
-  }
   
   display: flex;
   justify-content: space-between;
+  align-items: center;
+
 
   .burger-menu {
     display: none;
@@ -374,8 +374,6 @@ footer {
 
 // header {
   
-// }
-
 .about {
   
 .section-about__intro {
@@ -449,19 +447,10 @@ footer {
   }
 }
 
-// section-about__team
 
-// .about-team {
-  
-//   .section-about__team {
-  
-//     .about-team__subtitle {
-      
-      
-//     }
-//   }
-// }
 
+
+// features
 
 
 
