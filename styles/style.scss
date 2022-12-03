@@ -389,15 +389,8 @@ footer {
   display: flex;
   flex-direction: column;
   
-  .image-subtitle {
-    
-  }
-  
   .image-title {
     display: flex;
-    
-    .image-title__first {
-    }
   }
 }
 
@@ -435,6 +428,39 @@ footer {
     }
   }
 }
+
+//section-about__cards
+
+.about-cards {
+  
+  .section-about__cards {
+    display: flex;
+    flex-direction: column;
+   
+    .about-cards__info {
+      display: flex;
+    }
+    
+    .about-cards__logos {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+// section-about__team
+
+// .about-team {
+  
+//   .section-about__team {
+  
+//     .about-team__subtitle {
+      
+      
+//     }
+//   }
+// }
 
 
 
