@@ -13,6 +13,10 @@
   justify-content: space-between;
   align-items: center;
 
+  @include md {
+    display: flex;
+    flex-direction: column;
+  }
 
   .burger-menu {
     display: none;
@@ -23,6 +27,11 @@
   }
 
   nav {
+
+    @include md {
+      display: block;
+    }
+
     @include sm {
       display: none;
     }
@@ -31,7 +40,19 @@
     align-items: center;
 
     ul {
+      // @include md {
+      //   display: flex;
+      //   flex-direction: column;
+      //   width: 100%;
+      // }
+
       display: flex;
+
+      li {
+        @include md {
+          display: block;
+        }
+      }
     }
   }
 }
@@ -452,6 +473,19 @@ footer {
 
 // features
 
+.intro-features {
+
+  .features-intro {
+
+    .features-intro__info {
+      display: flex;
+    
+    }
+  }
+}
+
+
+// pricing
 
 
 

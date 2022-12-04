@@ -1002,3 +1002,201 @@ footer {
 
 
 // features
+
+
+.intro-features {
+  margin-top: 128px;
+
+  .features-intro {
+
+    .features-intro__subtitle {
+      text-align: center;
+
+      h1 {
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 64px;
+        color: #282938;
+        padding-bottom: 16px;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 28px;
+        text-align: center;
+        color: #282938;
+        opacity: 0.7;
+        padding-bottom: 64px;
+      }
+    }
+
+    .features-intro__info {
+      gap: 32px;
+
+      .features-intro__info-299, .features-intro__info-499 {
+        background: #F4F6FC;
+        border-radius: 12px;
+        width: 33%;
+
+        h3 {
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 56px;
+        color: #282938;   
+        padding-top: 64px;
+        padding-left: 48px;
+        padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+
+          span {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #2405F2;
+            padding-left: 16px;
+          }
+        }
+
+        h4 {
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 36px;
+          color: #282938;
+          padding-left: 48px;
+          padding-bottom: 8px;
+        }
+
+        p {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 28px;
+          color: #282938;
+          opacity: 0.7;
+          padding-left: 48px;
+          padding-right: 77px;
+        }
+
+        button {
+          background: #282938;
+          border-radius: 41px;
+          padding: 16px 78px;
+          border: none;
+          margin-bottom: 62px;
+          margin-left: 76px;
+          color: #F4F6FC;
+          cursor: pointer;
+        }
+
+        .info-299__body, .info-499__body {
+          padding-top: 78px;
+          display: flex;
+          flex-direction: column;
+          padding-bottom: 79px;
+
+          i {
+            color: #97DAAD;
+            padding-left: 48px;
+            padding-bottom: 20px;
+            cursor: pointer;
+
+            span {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 28px;
+              color: #282938;
+              padding-left: 12px;
+            }
+          }
+        }
+      }
+
+      .features-intro__info-399 {
+        background: #1C1E53;
+        border-radius: 12px;
+        width: 33%;
+
+        h3 {
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 56px;
+        color: #FFFFFF;  
+        padding-top: 64px;
+        padding-left: 48px;
+        padding-bottom: 20px;
+        display: flex;
+        align-items: center;
+
+          span {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #FCD980;
+            padding-left: 16px;
+          }
+        }
+
+        h4 {
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 36px;
+          color: #FFFFFF;
+          padding-left: 48px;
+          padding-bottom: 8px;
+        }
+
+        p {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 28px;
+          opacity: 0.7;
+          padding-left: 48px;
+          color: #FFFFFF;
+          padding-right: 77px;
+        }
+
+        button {
+          background: #FCD980;
+          border-radius: 41px;
+          padding: 16px 78px;
+          border: none;
+          margin-bottom: 62px;
+          margin-left: 76px;
+          cursor: pointer;
+        }
+
+        .info-399__body {
+          padding-top: 78px;
+          display: flex;
+          flex-direction: column;
+          padding-bottom: 79px;
+
+          i {
+            color: #97DAAD;
+            padding-left: 48px;
+            padding-bottom: 20px;
+            cursor: pointer;
+
+            span {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 28px;
+              color: #FFFFFF;
+              padding-left: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+// pricing
+
+.pricing {
+  margin-top: 128px;
+}
