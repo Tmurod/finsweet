@@ -995,10 +995,47 @@ footer .section-footer nav a {
   padding-left: 12px;
 }
 
-.pricing {
-  margin-top: 128px;
+.chat {
+  padding-top: 128px;
 }
-
+.chat .section-chat__pricing h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  color: #000000;
+  opacity: 0.87;
+  margin-bottom: 16px;
+}
+.chat .section-chat__pricing h2 {
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+  color: #232536;
+  padding-bottom: 16px;
+}
+.chat .section-chat__pricing p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #282938;
+  opacity: 0.6;
+}
+.chat .section-chat__pricing .chat-client {
+  padding-bottom: 128px;
+}
+.chat .section-chat__pricing .chat-client p {
+  width: 90%;
+}
+.chat .section-chat__pricing .chat-free {
+  background: #F4F6FC;
+  width: 100%;
+}
+.chat .section-chat__pricing .chat-free .chat-free__image {
+  padding: 128px 0;
+}
+.chat .section-chat__pricing .chat-free .chat-free__text {
+  padding-left: 80px;
+}
 @font-face {
   font-family: "Poppins";
   src: url("../fonts/Poppins-Light.ttf");
@@ -1363,4 +1400,14 @@ footer .section-footer nav ul {
 
 .intro-features .features-intro .features-intro__info {
   display: flex;
+}
+
+.chat .section-chat__pricing {
+  display: flex;
+  flex-direction: column;
+}
+.chat .section-chat__pricing .chat-client, .chat .section-chat__pricing .chat-free, .chat .section-chat__pricing .chat-work,
+.chat .section-chat__pricing .chat-delivery {
+  display: flex;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */

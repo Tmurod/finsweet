@@ -487,6 +487,20 @@ footer {
 
 // pricing
 
+.chat {
+
+  .section-chat__pricing {
+    display: flex;
+    flex-direction: column;
+
+    .chat-client, .chat-free, .chat-work,
+    .chat-delivery {
+      display: flex;
+      align-items: center;
+    }
+
+  }
+}
 
 
 
