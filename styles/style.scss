@@ -504,6 +504,40 @@ footer {
 
 
 
+// portfolio
+
+.image__portfolio {
+
+  .section-image__portfolio {
+    display: flex;
+    flex-direction: column;
+
+    .image__portfolio-info {
+      display: flex;
+
+    }
+  }
+}
+
+// build-portfolio
+
+.build-portfolio {
+
+}
+
+
+
+// desing.html
+// section-intro__design
+
+.section-intro__design {
+  display: flex;
+  flex-direction: column;
+
+  .desing-info {
+    display: flex;
+  }
+}
 
 
 
