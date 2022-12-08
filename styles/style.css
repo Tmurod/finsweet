@@ -1187,6 +1187,132 @@ footer .section-footer nav a {
 .intro-design .section-intro__design .design-image img {
   max-width: 100%;
 }
+.intro-design .section-intro__design .desing-info {
+  padding-top: 48px;
+  padding-bottom: 32px;
+}
+.intro-design .section-intro__design .desing-info p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #282938;
+  opacity: 0.8;
+}
+.intro-design .section-intro__design .desing-info a {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #282938;
+}
+.intro-design .section-intro__design hr {
+  opacity: 0.3;
+}
+
+.design-about {
+  max-width: 50%;
+}
+
+.section-about__design {
+  display: flex;
+  flex-direction: column;
+}
+.section-about__design h2 {
+  padding-top: 95px;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 56px;
+  color: #282938;
+}
+.section-about__design p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #282938;
+  opacity: 0.7;
+  padding-bottom: 24px;
+}
+.section-about__design ul {
+  text-align: start;
+  padding-bottom: 64px;
+  padding-left: 17px;
+}
+.section-about__design ul li {
+  list-style: circle;
+  padding-bottom: 16px;
+}
+.section-about__design .about-design__links {
+  display: flex;
+  border: 1px solid #282938;
+  border-width: 100%;
+  border-left: none;
+  border-right: none;
+}
+.section-about__design .about-design__links h3 {
+  padding: 26px;
+}
+.section-about__design .about-design__links h3:hover {
+  color: #2405F2;
+  cursor: pointer;
+}
+.section-about__design .about-design__button {
+  text-align: center;
+  padding-top: 128px;
+}
+.section-about__design .about-design__button h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  color: #282938;
+}
+.section-about__design .about-design__button p {
+  padding: 20px;
+}
+.section-about__design .about-design__button button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+  padding: 16px 48px;
+  background: #FCD980;
+  border-radius: 41px;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+.into__blog {
+  padding-top: 128px;
+}
+.into__blog .section-intro__blog {
+  text-align: center;
+}
+.into__blog .section-intro__blog h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  color: #282938;
+}
+.into__blog .section-intro__blog h5 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  color: #282938;
+  opacity: 0.87;
+  padding-bottom: 30px;
+}
+.into__blog .section-intro__blog img {
+  max-width: 100%;
+  padding-bottom: 48px;
+}
+.into__blog .section-intro__blog p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #282938;
+  opacity: 0.7;
+}
 
 @font-face {
   font-family: "Poppins";
@@ -1578,4 +1704,8 @@ footer .section-footer nav ul {
 }
 .section-intro__design .desing-info {
   display: flex;
+}
+.section-intro__design .desing-info {
+  display: flex;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */
