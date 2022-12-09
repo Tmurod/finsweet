@@ -548,6 +548,26 @@ footer {
 
 // blog
 
+// section-images__blog
+
+.images-blog {
+
+  .section-images__blog {
+
+    .images-blog__cards {
+      display: flex;
+      flex-direction: column;
+
+      .blog__cards-col__1, .blog__cards-col__2 {
+        display: flex;
+      }
+    }
+  }
+}
+
+
+
+
 
 
 
