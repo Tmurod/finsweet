@@ -521,9 +521,9 @@ footer {
 
 // build-portfolio
 
-.build-portfolio {
+// .build-portfolio {
 
-}
+// }
 
 
 
@@ -568,16 +568,35 @@ footer {
 
 // chat
 
-.section-intro__study {
+// .section-intro__study {
   
-}
+// }
 
-.intro__contact-input {
-  display: flex;
-  flex-direction: column;
+// contact
+
+.intro__contact {
   
-  .contact-input__col-1 {
-    display: flex;
+  .section-intro__contact {
+    
+    .intro__contact-subtitle {
+      
+    }
+    
+    .intro-contact__info {
+      
+      form {
+        
+        .form-input {
+          display: flex;
+          justify-content: space-between;
+          
+          // .contact-info__col-1,
+          // .contact-info__col-2 {
+          //   // flex: 1;
+          // }
+        }
+      }
+    }
   }
 }
 
